@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/vue@3.2.31/dist/vue.global.prod.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="left">
+            <div class="top_header">
+
+                <div class="icon_telegram">
+                    <img src="icon_tg.png">
+                </div>
+
+                <div class="mejdu"></div>
+
+                <div class="name_channel">
+                    <h1>Чат Рубцовска</h1>
+                </div>
+
+            </div>
+
+
+            <div  class="counter">
+                <p>Нас уже <span id="counter_var">400</span> человек. <br> Присоединяйтесь к нашему чату</p>
+            </div>
+
+
+            <div  class="link_button">
+                <a href="https://xn----7sbbdf2c0aomen1bg.xn--p1ai/" class="btn" >Перейти в Телеграм</a>
+            </div>
+
+
+            <div class="explanatory_note">
+                <p>Или отправте ананимное сообщение прямо сейчас:</p>
+            </div>
+
+
+            <div class="input_window">
+                <textarea   placeholder="Введите сообщение" class="input_field" type="text"></textarea>
+                <button class = "button_for_input_window" ><p>Отправить</p> <img src="send.png" alt="" ></button>
+            </div>
+        </div>
+
+
+       
+
+
+
+
+
+
+
+
+
+
+        <div id="telegram-messages" class="right">
+           
+            <div class = "scrol">
+            <div v-for="message in messages" class="messagees">
+                <p>{{message.first_name}}</p>
+                <p> {{message.text}}</p>
+                <p> {{message.photo_url}}</p>
+            </div>
+        </div>
+   
+        </div>
+    </div>
+
+    <script src = "script.js"></script>
+</body>
+</html>

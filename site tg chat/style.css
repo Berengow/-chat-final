@@ -1,0 +1,263 @@
+html{
+    background-color: #033152 ;
+}
+
+body {
+    margin: 0px;
+    background-image: url(background_boot_image.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.container {
+    display: grid;
+    margin: 0 90px;
+    padding-top: 50px;
+    grid-template-columns: 1fr 1fr;
+    /*overflow-y: hidden;*/
+    height: 94vh;
+}
+
+.right {
+    background-image: url(telephone1.png);
+    background-repeat: no-repeat;
+    display: flex;
+   flex-direction: column;
+    align-items: center;
+    align-content: center; 
+    justify-content: center; 
+    overflow: auto;   
+}
+
+
+
+.top_header{
+    display:flex ;
+    align-items: center;
+
+}
+
+.name_channel h1{
+    font-size: 72px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400 ;
+    color:#fff
+}
+
+.icon_telegram {
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        
+}
+
+.counter p{
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#fff
+
+}
+
+.explanatory_note p{
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#fff;
+    margin-top: 2em;
+}
+
+.input_window textarea{
+    font-size: 30px;
+    width: 656px;
+    height: 272px;
+    border-radius: 30px;
+    border: none;
+    resize: none;
+    padding-top: 0.4em;
+    padding-left: 0.4em;
+}
+
+
+.messagees{
+    background-color: #fff;
+    border-radius: 20px;
+    padding: auto;
+    max-width: 100%;
+    display: flex;
+flex-direction: column;
+margin: 20px;
+
+}
+
+.scrol::-webkit-scrollbar {
+    width: 0;
+   
+  }
+
+
+.right{
+    padding-top: 100px;
+}
+
+
+.scrol{
+ 
+    padding-right: 20%;
+    overflow: scroll;
+    max-height:800px;
+    width:400px;
+    margin: 0;
+}
+
+.mejdu{
+    width:50px;
+}
+
+
+
+.right p{
+    color:black;
+    font-size: 24px;
+    padding-left: 30px;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+.link_button{
+    display:flex ;
+    background: #5EC6FF; /* Серый цвет фона */
+    border-radius: 500px; /* Скругляем  */
+    width: 380px;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 1.9em;
+}
+
+.link_button a{
+    color: #fff; /* Белый цвет текста */
+    text-decoration: none; 
+    font-family: Roboto;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px;
+letter-spacing: 0em;
+text-align: center;
+
+    
+}
+
+
+.input_window {
+    position:relative;
+}
+
+.button_for_input_window{
+width: 187px;
+height: 43px;
+left: 590px;
+top: 740px;
+border-radius: 30px;
+background: #5EC6FF;
+border: none;
+display: flex;
+align-items: center;
+justify-content: center;
+position:absolute;
+top: 80%;
+left:67%
+
+}
+
+.button_for_input_window p{
+    font-family: Roboto;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 23px;
+letter-spacing: 0em;
+text-align: center;
+color:#fff;
+
+    }
+
+    .input_window img{
+        
+       
+    }
+    .input_window {
+        
+        max-width: 656px;
+    }
+    .button_for_input_window {
+        opacity: 1;
+      }
+      
+      .button_for_input_window:hover {
+        opacity: 0.6;
+      }
+
+
+
+      .link_button {
+        opacity: 1;
+      }
+      
+      .link_button:hover {
+        opacity: 0.6;
+      }
+
+      iframe{
+        padding-left: 20%;
+        margin-top:100px;
+        border: none;
+        overflow-y:  hidden;
+      }
+
+
+      @media screen and (max-width: 1495px){
+        .container{
+            display:flex;
+            flex-direction: column;
+        }
+    
+        .top_header{
+            justify-content: center;
+            
+        }
+
+        .counter{
+            display: flex;
+            justify-content: center;
+        }
+        
+        .link_button{
+            display: flex;
+            justify-content: center;
+        }
+
+
+        .name_channel h1{
+            font-size: 50px;
+        }
+        
+    }
